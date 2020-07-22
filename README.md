@@ -5,5 +5,5 @@ A Sample application for full text search and CURD operation using ASP.Net Core 
 ## Local Setup
 1. Download full source code.
 2. Build the source code.
-3. Goto folder path (~/solr/bin) & execute the command : start solr
+3. Goto folder path (~/solr/bin) & execute the command : solr start
 4. Run the application
