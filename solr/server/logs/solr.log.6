@@ -1,0 +1,877 @@
+2020-07-20 09:37:40.066 INFO  (main) [   ] o.e.j.u.log Logging initialized @1158ms to org.eclipse.jetty.util.log.Slf4jLog
+2020-07-20 09:37:40.145 WARN  (main) [   ] o.e.j.x.XmlConfiguration Ignored arg: <Arg name="threadpool">
+    <New id="threadpool" class="com.codahale.metrics.jetty9.InstrumentedQueuedThreadPool"><Arg name="registry">
+        <Call id="solrJettyMetricRegistry" name="getOrCreate" class="com.codahale.metrics.SharedMetricRegistries"><Arg>solr.jetty</Arg></Call>
+      </Arg></New>
+  </Arg>
+2020-07-20 09:37:40.248 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.27.v20200227; built: 2020-02-27T18:37:21.340Z; git: a304fd9f351f337e7c0e2a7c28878dd536149c6c; jvm 1.8.0_181-b13
+2020-07-20 09:37:40.281 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///C:/SKSFile/solr/server/contexts/] at interval 0
+2020-07-20 09:37:41.052 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2020-07-20 09:37:41.061 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
+2020-07-20 09:37:41.061 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
+2020-07-20 09:37:41.063 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 660000ms
+2020-07-20 09:37:41.123 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2020-07-20 09:37:41.128 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 8.6.0
+2020-07-20 09:37:41.128 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2020-07-20 09:37:41.128 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: C:\SKSFile\solr
+2020-07-20 09:37:41.128 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2020-07-20T09:37:41.128Z
+2020-07-20 09:37:41.138 INFO  (main) [   ] o.a.s.c.SolrPaths Using system property solr.solr.home: C:\SKSFile\solr\server\solr
+2020-07-20 09:37:41.144 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from C:\SKSFile\solr\server\solr\solr.xml
+2020-07-20 09:37:41.234 INFO  (main) [   ] o.a.s.c.SolrXmlConfig MBean server found: com.sun.jmx.mbeanserver.JmxMBeanServer@e61fe6, but no JMX reporters were configured - adding default JMX reporter.
+2020-07-20 09:37:41.790 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory Host whitelist initialized: WhitelistHostChecker [whitelistHosts=null, whitelistHostCheckingEnabled=true]
+2020-07-20 09:37:42.089 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@c51bb7[provider=null,keyStore=null,trustStore=null]
+2020-07-20 09:37:42.089 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@c51bb7[provider=null,keyStore=null,trustStore=null]
+2020-07-20 09:37:42.163 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@bdc168[provider=null,keyStore=null,trustStore=null]
+2020-07-20 09:37:42.163 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@bdc168[provider=null,keyStore=null,trustStore=null]
+2020-07-20 09:37:42.202 WARN  (main) [   ] o.a.s.c.CoreContainer Not all security plugins configured!  authentication=disabled authorization=disabled.  Solr is only as secure as you make it. Consider configuring authentication/authorization before exposing Solr to users internal or external.  See https://s.apache.org/solrsecurity for more info
+2020-07-20 09:37:42.311 INFO  (main) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
+2020-07-20 09:37:42.312 INFO  (main) [   ] o.a.s.h.a.MetricsHistoryHandler No .system collection, keeping metrics history in memory.
+2020-07-20 09:37:42.366 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.node' (registry 'solr.node') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@e61fe6
+2020-07-20 09:37:42.366 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jvm' (registry 'solr.jvm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@e61fe6
+2020-07-20 09:37:42.370 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jetty' (registry 'solr.jetty') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@e61fe6
+2020-07-20 09:37:42.403 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath C:\SKSFile\solr\server\solr
+2020-07-20 09:37:42.403 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [SKSCore]
+2020-07-20 09:37:42.469 INFO  (coreLoadExecutor-13-thread-1) [   x:SKSCore] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.6.0
+2020-07-20 09:37:42.608 WARN  (coreLoadExecutor-13-thread-1) [   x:SKSCore] o.a.s.s.ManagedIndexSchemaFactory The schema has been upgraded to managed, but the non-managed schema schema.xml is still loadable.  PLEASE REMOVE THIS FILE.
+2020-07-20 09:37:42.682 INFO  (coreLoadExecutor-13-thread-1) [   x:SKSCore] o.a.s.s.IndexSchema Schema name=default-config
+2020-07-20 09:37:43.533 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@24a83d{/solr,file:///C:/SKSFile/solr/server/solr-webapp/webapp/,AVAILABLE}{C:\SKSFile\solr\server/solr-webapp/webapp}
+2020-07-20 09:37:43.544 INFO  (main) [   ] o.e.j.s.AbstractConnector Started ServerConnector@177849e{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8983}
+2020-07-20 09:37:43.544 INFO  (main) [   ] o.e.j.s.Server Started @4637ms
+2020-07-20 09:37:43.626 INFO  (coreLoadExecutor-13-thread-1) [   x:SKSCore] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2020-07-20 09:37:43.689 INFO  (coreLoadExecutor-13-thread-1) [   x:SKSCore] o.a.s.c.CoreContainer Creating SolrCore 'SKSCore' using configuration from instancedir C:\SKSFile\solr\server\solr\SKSCore, trusted=true
+2020-07-20 09:37:43.709 INFO  (coreLoadExecutor-13-thread-1) [   x:SKSCore] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.SKSCore' (registry 'solr.core.SKSCore') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@e61fe6
+2020-07-20 09:37:43.722 INFO  (coreLoadExecutor-13-thread-1) [   x:SKSCore] o.a.s.c.SolrCore [[SKSCore] ] Opening new SolrCore at [C:\SKSFile\solr\server\solr\SKSCore], dataDir=[C:\SKSFile\solr\server\solr\SKSCore\data\]
+2020-07-20 09:37:44.216 INFO  (coreLoadExecutor-13-thread-1) [   x:SKSCore] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2020-07-20 09:37:44.216 INFO  (coreLoadExecutor-13-thread-1) [   x:SKSCore] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2020-07-20 09:37:44.238 INFO  (coreLoadExecutor-13-thread-1) [   x:SKSCore] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2020-07-20 09:37:44.238 INFO  (coreLoadExecutor-13-thread-1) [   x:SKSCore] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2020-07-20 09:37:44.573 INFO  (coreLoadExecutor-13-thread-1) [   x:SKSCore] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: C:\SKSFile\solr\server\solr\SKSCore\conf
+2020-07-20 09:37:44.588 INFO  (coreLoadExecutor-13-thread-1) [   x:SKSCore] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2020-07-20 09:37:44.593 INFO  (coreLoadExecutor-13-thread-1) [   x:SKSCore] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2020-07-20 09:37:44.601 INFO  (coreLoadExecutor-13-thread-1) [   x:SKSCore] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2020-07-20 09:37:44.612 INFO  (searcherExecutor-15-thread-1-processing-x:SKSCore) [   x:SKSCore] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2020-07-20 09:37:44.612 INFO  (searcherExecutor-15-thread-1-processing-x:SKSCore) [   x:SKSCore] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2020-07-20 09:37:44.620 INFO  (searcherExecutor-15-thread-1-processing-x:SKSCore) [   x:SKSCore] o.a.s.c.SolrCore [SKSCore]  Registered new searcher autowarm time: 0 ms
+2020-07-20 09:37:47.602 INFO  (qtp23598067-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=68
+2020-07-20 09:38:01.255 INFO  (qtp23598067-18) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=7 status=0 QTime=34
+2020-07-20 09:38:15.877 INFO  (qtp23598067-20) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=7 status=0 QTime=0
+2020-07-20 09:38:59.128 INFO  (qtp23598067-16) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=7 status=0 QTime=0
+2020-07-20 10:01:13.805 INFO  (qtp23598067-24) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=7 status=0 QTime=0
+2020-07-20 10:01:46.943 INFO  (qtp23598067-23) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=7 status=0 QTime=0
+2020-07-20 10:04:04.555 INFO  (qtp23598067-21) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=7 status=0 QTime=0
+2020-07-20 10:04:51.505 INFO  (qtp23598067-18) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=7 status=0 QTime=0
+2020-07-20 10:09:27.930 INFO  (qtp23598067-17) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=7 status=0 QTime=0
+2020-07-20 10:17:19.333 INFO  (qtp23598067-21) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=7 status=0 QTime=0
+2020-07-20 10:27:02.061 INFO  (qtp23598067-16) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=7 status=0 QTime=0
+2020-07-20 10:27:08.723 INFO  (qtp23598067-18) [   x:SKSCore] o.a.s.u.p.LogUpdateProcessorFactory [SKSCore]  webapp=/solr path=/update params={version=2.2&wt=xml}{delete=[de288dc8-1cb8-4c62-9b2c-7b20a4e9c6d8 (-1672731247207514112)]} 0 122
+2020-07-20 10:27:09.314 INFO  (searcherExecutor-15-thread-1-processing-x:SKSCore) [   x:SKSCore] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2020-07-20 10:27:09.321 INFO  (searcherExecutor-15-thread-1-processing-x:SKSCore) [   x:SKSCore] o.a.s.c.SolrCore [SKSCore]  Registered new searcher autowarm time: 1 ms
+2020-07-20 10:27:09.338 INFO  (qtp23598067-22) [   x:SKSCore] o.a.s.u.p.LogUpdateProcessorFactory [SKSCore]  webapp=/solr path=/update params={version=2.2&wt=xml}{commit=} 0 602
+2020-07-20 10:27:14.381 INFO  (qtp23598067-17) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=6 status=0 QTime=0
+2020-07-20 10:27:17.000 INFO  (qtp23598067-21) [   x:SKSCore] o.a.s.u.p.LogUpdateProcessorFactory [SKSCore]  webapp=/solr path=/update params={version=2.2&wt=xml}{delete=[82d3fb45-3543-4a4f-8f41-a2a92af470cc (-1672731255896014848)]} 0 2
+2020-07-20 10:27:17.248 INFO  (searcherExecutor-15-thread-1-processing-x:SKSCore) [   x:SKSCore] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2020-07-20 10:27:17.252 INFO  (searcherExecutor-15-thread-1-processing-x:SKSCore) [   x:SKSCore] o.a.s.c.SolrCore [SKSCore]  Registered new searcher autowarm time: 0 ms
+2020-07-20 10:27:17.263 INFO  (qtp23598067-18) [   x:SKSCore] o.a.s.u.p.LogUpdateProcessorFactory [SKSCore]  webapp=/solr path=/update params={version=2.2&wt=xml}{commit=} 0 256
+2020-07-20 10:27:22.291 INFO  (qtp23598067-22) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=5 status=0 QTime=0
+2020-07-20 10:28:48.331 INFO  (qtp23598067-17) [   x:SKSCore] o.a.s.u.p.LogUpdateProcessorFactory [SKSCore]  webapp=/solr path=/update params={version=2.2&wt=xml}{add=[571b799b-4462-49dd-818d-bd69ea61e131 (1672731351633100800)]} 0 36
+2020-07-20 10:28:48.903 INFO  (searcherExecutor-15-thread-1-processing-x:SKSCore) [   x:SKSCore] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2020-07-20 10:28:48.906 INFO  (searcherExecutor-15-thread-1-processing-x:SKSCore) [   x:SKSCore] o.a.s.c.SolrCore [SKSCore]  Registered new searcher autowarm time: 0 ms
+2020-07-20 10:28:48.907 INFO  (qtp23598067-21) [   x:SKSCore] o.a.s.u.p.LogUpdateProcessorFactory [SKSCore]  webapp=/solr path=/update params={version=2.2&wt=xml}{commit=} 0 569
+2020-07-20 10:28:53.960 INFO  (qtp23598067-18) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=6 status=0 QTime=1
+2020-07-20 11:57:22.086 INFO  (qtp23598067-23) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=6 status=0 QTime=1
+2020-07-20 11:58:34.634 INFO  (qtp23598067-17) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=6 status=0 QTime=0
+2020-07-20 11:59:30.905 INFO  (qtp23598067-21) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=6 status=0 QTime=0
+2020-07-20 12:00:37.973 INFO  (qtp23598067-18) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=6 status=0 QTime=0
+2020-07-20 12:04:49.592 INFO  (qtp23598067-25) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=6 status=0 QTime=0
+2020-07-20 12:06:14.543 INFO  (qtp23598067-17) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=6 status=0 QTime=0
+2020-07-20 12:06:32.847 INFO  (qtp23598067-21) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=6 status=0 QTime=0
+2020-07-20 12:07:06.010 INFO  (qtp23598067-18) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=6 status=0 QTime=0
+2020-07-20 12:32:59.815 INFO  (qtp23598067-23) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=6 status=0 QTime=0
+2020-07-20 12:33:29.967 INFO  (qtp23598067-17) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=6 status=0 QTime=0
+2020-07-20 12:34:31.429 INFO  (qtp23598067-21) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=6 status=0 QTime=0
+2020-07-20 12:38:59.002 INFO  (qtp23598067-24) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=6 status=0 QTime=0
+2020-07-20 12:39:28.071 INFO  (qtp23598067-22) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=6 status=0 QTime=0
+2020-07-20 12:40:41.582 INFO  (qtp23598067-17) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=6 status=0 QTime=0
+2020-07-20 13:17:21.498 INFO  (qtp23598067-16) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=6 status=0 QTime=0
+2020-07-20 13:17:29.533 INFO  (qtp23598067-23) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=id:"changeme2"&rows=100000000&wt=xml} hits=0 status=0 QTime=15
+2020-07-20 13:17:50.824 INFO  (qtp23598067-22) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=id:"changeme2"&rows=100000000&wt=xml} hits=0 status=0 QTime=0
+2020-07-20 13:18:26.826 INFO  (qtp23598067-17) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=6 status=0 QTime=0
+2020-07-20 13:18:39.175 INFO  (qtp23598067-20) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=id:"changeme2"&rows=100000000&wt=xml} hits=0 status=0 QTime=0
+2020-07-20 13:19:10.744 INFO  (qtp23598067-23) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=id:"changeme2"&rows=100000000&wt=xml} hits=0 status=0 QTime=0
+2020-07-20 13:47:09.985 INFO  (qtp23598067-21) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=6 status=0 QTime=0
+2020-07-20 13:47:30.583 INFO  (qtp23598067-17) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=sahoo&rows=100000000&wt=xml} hits=0 status=0 QTime=15
+2020-07-20 14:36:04.193 INFO  (qtp23598067-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1595255764095} status=0 QTime=3
+2020-07-20 14:36:04.284 INFO  (qtp23598067-25) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1595255764095} status=0 QTime=94
+2020-07-20 14:36:07.773 INFO  (qtp23598067-21) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&_=1595255764160} hits=6 status=0 QTime=1
+2020-07-20 14:36:24.264 INFO  (qtp23598067-25) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&fq=Tinigharia&_=1595255764160} hits=0 status=0 QTime=15
+2020-07-20 14:36:39.689 INFO  (qtp23598067-25) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1595255799618} status=0 QTime=0
+2020-07-20 14:36:39.772 INFO  (qtp23598067-42) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1595255799619} status=0 QTime=82
+2020-07-20 14:36:41.501 INFO  (qtp23598067-17) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&_=1595255799667} hits=6 status=0 QTime=0
+2020-07-20 14:36:50.613 INFO  (qtp23598067-42) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=Tinigharia&_=1595255799667} hits=0 status=0 QTime=0
+2020-07-20 14:36:58.544 INFO  (qtp23598067-42) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1595255818474} status=0 QTime=0
+2020-07-20 14:36:58.615 INFO  (qtp23598067-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1595255818475} status=0 QTime=70
+2020-07-20 14:37:13.121 INFO  (qtp23598067-25) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&Tinigharia=&_=1595255818522} hits=6 status=0 QTime=0
+2020-07-20 14:39:21.074 INFO  (qtp23598067-24) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&df=Tinigharia&_=1595255818522} hits=6 status=0 QTime=0
+2020-07-20 14:39:22.583 INFO  (qtp23598067-25) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&df=Tinigharia&_=1595255818522} hits=6 status=0 QTime=0
+2020-07-20 14:39:25.017 INFO  (qtp23598067-25) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1595255964947} status=0 QTime=0
+2020-07-20 14:39:25.088 INFO  (qtp23598067-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1595255964948} status=0 QTime=72
+2020-07-20 14:39:30.334 INFO  (qtp23598067-17) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&df=Tinigharia&_=1595255964996} hits=6 status=0 QTime=0
+2020-07-20 14:39:36.705 INFO  (qtp23598067-21) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&fl=Tinigharia&_=1595255964996} hits=6 status=0 QTime=3
+2020-07-20 14:39:45.559 INFO  (qtp23598067-17) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&fq=Tinigharia&_=1595255964996} hits=0 status=0 QTime=1
+2020-07-20 14:39:47.433 INFO  (qtp23598067-21) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&fq=Tinigharia&_=1595255964996} hits=0 status=0 QTime=0
+2020-07-20 14:40:00.041 INFO  (qtp23598067-17) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*Tinigharia&_=1595255964996} hits=0 status=0 QTime=23
+2020-07-20 14:40:05.703 ERROR (qtp23598067-21) [   x:SKSCore] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse ':Tinigharia': Encountered " ":" ": "" at line 1, column 0.
+Was expecting one of:
+    <NOT> ...
+    "+" ...
+    "-" ...
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    <TERM> ...
+    
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:220)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:305)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:214)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2606)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:812)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:588)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:415)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:345)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1596)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:545)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:590)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1610)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1300)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:485)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1580)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1215)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:221)
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:500)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:547)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:273)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:375)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:806)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:938)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.solr.search.SyntaxError: Cannot parse ':Tinigharia': Encountered " ":" ": "" at line 1, column 0.
+Was expecting one of:
+    <NOT> ...
+    "+" ...
+    "-" ...
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    <TERM> ...
+    
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:267)
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:174)
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:162)
+	... 44 more
+Caused by: org.apache.solr.parser.ParseException: Encountered " ":" ": "" at line 1, column 0.
+Was expecting one of:
+    <NOT> ...
+    "+" ...
+    "-" ...
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    <TERM> ...
+    
+	at org.apache.solr.parser.QueryParser.generateParseException(QueryParser.java:885)
+	at org.apache.solr.parser.QueryParser.jj_consume_token(QueryParser.java:767)
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:167)
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131)
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:263)
+	... 47 more
+
+2020-07-20 14:40:05.704 INFO  (qtp23598067-21) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=:Tinigharia&_=1595255964996} status=400 QTime=3
+2020-07-20 14:59:44.346 INFO  (qtp23598067-21) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&fq=&fq=&rows=100000000&wt=xml} hits=6 status=0 QTime=0
+2020-07-20 15:00:05.968 ERROR (qtp23598067-18) [   x:SKSCore] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: undefined field name
+	at org.apache.solr.schema.IndexSchema.getDynamicFieldType(IndexSchema.java:1318)
+	at org.apache.solr.schema.IndexSchema$SolrQueryAnalyzer.getWrappedAnalyzer(IndexSchema.java:466)
+	at org.apache.lucene.analysis.DelegatingAnalyzerWrapper$DelegatingReuseStrategy.getReusableComponents(DelegatingAnalyzerWrapper.java:86)
+	at org.apache.lucene.analysis.Analyzer.tokenStream(Analyzer.java:192)
+	at org.apache.lucene.util.QueryBuilder.createFieldQuery(QueryBuilder.java:262)
+	at org.apache.solr.parser.SolrQueryParserBase.newFieldQuery(SolrQueryParserBase.java:527)
+	at org.apache.solr.parser.QueryParser.newFieldQuery(QueryParser.java:62)
+	at org.apache.solr.parser.SolrQueryParserBase.getFieldQuery(SolrQueryParserBase.java:1102)
+	at org.apache.solr.parser.SolrQueryParserBase.handleBareTokenQuery(SolrQueryParserBase.java:825)
+	at org.apache.solr.parser.QueryParser.Term(QueryParser.java:421)
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:278)
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:162)
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:282)
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:162)
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131)
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:263)
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:174)
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:209)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:305)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:214)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2606)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:812)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:588)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:415)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:345)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1596)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:545)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:590)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1610)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1300)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:485)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1580)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1215)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:221)
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:500)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:547)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:273)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:375)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:806)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:938)
+	at java.lang.Thread.run(Thread.java:748)
+
+2020-07-20 15:00:05.968 INFO  (qtp23598067-18) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&fq=name:(Tinigharia)&fq=address:(Tinigharia)&rows=100000000&wt=xml} status=400 QTime=1
+2020-07-20 15:04:08.240 INFO  (qtp23598067-24) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&address=&name=&rows=100000000&wt=xml} hits=6 status=0 QTime=0
+2020-07-20 15:04:30.262 INFO  (qtp23598067-17) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&address=Tinigharia&name=Tinigharia&rows=100000000&wt=xml} hits=6 status=0 QTime=0
+2020-07-20 15:05:27.673 INFO  (qtp23598067-25) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&address=&rows=100000000&wt=xml} hits=6 status=0 QTime=0
+2020-07-20 15:05:39.225 INFO  (qtp23598067-43) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&address=Tinigharia&rows=100000000&wt=xml} hits=6 status=0 QTime=0
+2020-07-20 15:29:01.364 INFO  (qtp23598067-16) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=6 status=0 QTime=0
+2020-07-20 15:29:14.301 INFO  (qtp23598067-17) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=address:(Tinigharia)&rows=100000000&wt=xml} hits=1 status=0 QTime=4
+2020-07-20 15:39:57.928 INFO  (qtp23598067-18) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=6 status=0 QTime=1
+2020-07-20 15:40:13.287 INFO  (qtp23598067-43) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=(address:Tinigharia)&rows=100000000&wt=xml} hits=1 status=0 QTime=0
+2020-07-20 15:41:45.560 INFO  (qtp23598067-23) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=6 status=0 QTime=0
+2020-07-20 15:41:59.238 ERROR (qtp23598067-17) [   x:SKSCore] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: undefined field name
+	at org.apache.solr.schema.IndexSchema.getDynamicFieldType(IndexSchema.java:1318)
+	at org.apache.solr.schema.IndexSchema$SolrQueryAnalyzer.getWrappedAnalyzer(IndexSchema.java:466)
+	at org.apache.lucene.analysis.DelegatingAnalyzerWrapper$DelegatingReuseStrategy.getReusableComponents(DelegatingAnalyzerWrapper.java:86)
+	at org.apache.lucene.analysis.Analyzer.tokenStream(Analyzer.java:192)
+	at org.apache.lucene.util.QueryBuilder.createFieldQuery(QueryBuilder.java:262)
+	at org.apache.solr.parser.SolrQueryParserBase.newFieldQuery(SolrQueryParserBase.java:527)
+	at org.apache.solr.parser.QueryParser.newFieldQuery(QueryParser.java:62)
+	at org.apache.solr.parser.SolrQueryParserBase.getFieldQuery(SolrQueryParserBase.java:1102)
+	at org.apache.solr.parser.SolrQueryParserBase.handleBareTokenQuery(SolrQueryParserBase.java:825)
+	at org.apache.solr.parser.QueryParser.Term(QueryParser.java:421)
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:278)
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:162)
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:282)
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:162)
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131)
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:263)
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:174)
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:162)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:305)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:214)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2606)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:812)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:588)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:415)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:345)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1596)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:545)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:590)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1610)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1300)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:485)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1580)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1215)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:221)
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:500)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:547)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:273)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:375)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:806)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:938)
+	at java.lang.Thread.run(Thread.java:748)
+
+2020-07-20 15:41:59.239 INFO  (qtp23598067-17) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=(name:Tinigharia+AND+address:Tinigharia)&rows=100000000&wt=xml} status=400 QTime=1
+2020-07-20 15:45:38.849 INFO  (qtp23598067-24) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=6 status=0 QTime=0
+2020-07-20 15:45:58.273 INFO  (qtp23598067-43) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=(firstname:Tinigharia+AND+address:Tinigharia)&rows=100000000&wt=xml} hits=0 status=0 QTime=5
+2020-07-20 15:46:22.734 INFO  (qtp23598067-23) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=6 status=0 QTime=0
+2020-07-20 15:46:39.091 INFO  (qtp23598067-17) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=(firstname:Tinigharia+OR+address:Tinigharia)&rows=100000000&wt=xml} hits=1 status=0 QTime=1
+2020-07-20 16:00:32.324 INFO  (qtp23598067-25) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=6 status=0 QTime=0
+2020-07-20 16:17:34.239 INFO  (qtp23598067-18) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=6 status=0 QTime=0
+2020-07-20 16:17:53.979 INFO  (qtp23598067-23) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=6 status=0 QTime=0
+2020-07-20 16:19:29.009 INFO  (qtp23598067-17) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=6 status=0 QTime=0
+2020-07-20 16:19:54.076 INFO  (qtp23598067-21) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=6 status=0 QTime=0
+2020-07-20 16:21:59.981 INFO  (qtp23598067-16) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=6 status=0 QTime=1
+2020-07-20 16:22:07.594 INFO  (qtp23598067-23) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=6 status=0 QTime=0
+2020-07-20 16:22:35.551 INFO  (qtp23598067-17) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=6 status=0 QTime=0
+2020-07-20 16:24:33.466 INFO  (qtp23598067-21) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=6 status=0 QTime=0
+2020-07-20 16:24:41.168 INFO  (qtp23598067-24) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=6 status=0 QTime=0
+2020-07-20 16:25:00.415 INFO  (qtp23598067-23) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=6 status=0 QTime=0
+2020-07-20 16:26:34.334 INFO  (qtp23598067-17) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=6 status=0 QTime=0
+2020-07-20 16:28:14.277 INFO  (qtp23598067-21) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=6 status=0 QTime=0
+2020-07-20 16:37:55.607 INFO  (qtp23598067-25) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=6 status=0 QTime=0
+2020-07-20 16:39:08.516 INFO  (qtp23598067-23) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=6 status=0 QTime=0
+2020-07-20 16:43:25.488 INFO  (qtp23598067-18) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=6 status=0 QTime=0
+2020-07-20 16:43:38.082 INFO  (qtp23598067-21) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=6 status=0 QTime=0
+2020-07-20 16:43:54.727 INFO  (qtp23598067-43) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=6 status=0 QTime=0
+2020-07-20 16:45:23.557 INFO  (qtp23598067-23) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=6 status=0 QTime=0
+2020-07-20 16:45:51.379 INFO  (qtp23598067-22) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=6 status=0 QTime=0
+2020-07-20 16:46:09.964 INFO  (qtp23598067-21) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=6 status=0 QTime=0
+2020-07-20 16:46:15.035 INFO  (qtp23598067-43) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=6 status=0 QTime=0
+2020-07-20 16:46:34.618 INFO  (qtp23598067-23) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=6 status=0 QTime=0
+2020-07-20 16:46:44.352 INFO  (qtp23598067-22) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=6 status=0 QTime=0
+2020-07-20 16:47:20.439 INFO  (qtp23598067-21) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=6 status=0 QTime=0
+2020-07-20 16:47:38.479 INFO  (qtp23598067-43) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=6 status=0 QTime=0
+2020-07-20 16:47:55.817 INFO  (qtp23598067-23) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=6 status=0 QTime=0
+2020-07-20 16:48:45.808 INFO  (qtp23598067-22) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=6 status=0 QTime=0
+2020-07-20 16:49:34.407 INFO  (qtp23598067-21) [   x:SKSCore] o.a.s.u.p.LogUpdateProcessorFactory [SKSCore]  webapp=/solr path=/update params={version=2.2&wt=xml}{add=[f609b8dc-96a4-4614-bcc8-1484f8d355ff (1672755307504205824)]} 0 11
+2020-07-20 16:49:34.722 INFO  (searcherExecutor-15-thread-1-processing-x:SKSCore) [   x:SKSCore] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2020-07-20 16:49:34.727 INFO  (searcherExecutor-15-thread-1-processing-x:SKSCore) [   x:SKSCore] o.a.s.c.SolrCore [SKSCore]  Registered new searcher autowarm time: 0 ms
+2020-07-20 16:49:34.728 INFO  (qtp23598067-43) [   x:SKSCore] o.a.s.u.p.LogUpdateProcessorFactory [SKSCore]  webapp=/solr path=/update params={version=2.2&wt=xml}{commit=} 0 307
+2020-07-20 16:49:44.140 INFO  (qtp23598067-23) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=7 status=0 QTime=2
+2020-07-20 16:49:54.855 INFO  (qtp23598067-22) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=7 status=0 QTime=0
+2020-07-20 16:50:44.155 INFO  (qtp23598067-21) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=7 status=0 QTime=0
+2020-07-20 16:50:47.643 INFO  (qtp23598067-43) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=7 status=0 QTime=0
+2020-07-20 16:51:50.760 INFO  (qtp23598067-23) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=7 status=0 QTime=0
+2020-07-20 16:52:11.670 INFO  (qtp23598067-22) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=7 status=0 QTime=1
+2020-07-20 16:52:45.330 INFO  (qtp23598067-21) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=7 status=0 QTime=0
+2020-07-20 16:54:12.772 INFO  (qtp23598067-43) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=7 status=0 QTime=0
+2020-07-20 16:54:39.193 INFO  (qtp23598067-23) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=7 status=0 QTime=0
+2020-07-20 16:59:17.415 INFO  (qtp23598067-24) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=7 status=0 QTime=0
+2020-07-20 16:59:21.844 INFO  (qtp23598067-21) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=7 status=0 QTime=0
+2020-07-20 16:59:26.116 INFO  (qtp23598067-43) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=7 status=0 QTime=0
+2020-07-20 16:59:30.079 INFO  (qtp23598067-23) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=7 status=0 QTime=0
+2020-07-20 16:59:32.858 INFO  (qtp23598067-16) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=7 status=0 QTime=0
+2020-07-20 16:59:36.854 INFO  (qtp23598067-21) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=7 status=0 QTime=0
+2020-07-20 16:59:39.724 INFO  (qtp23598067-43) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=7 status=0 QTime=0
+2020-07-20 17:00:00.203 INFO  (qtp23598067-23) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=7 status=0 QTime=0
+2020-07-20 17:00:02.808 INFO  (qtp23598067-16) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=7 status=0 QTime=0
+2020-07-20 17:00:54.492 INFO  (qtp23598067-21) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=7 status=0 QTime=0
+2020-07-20 17:01:27.755 INFO  (qtp23598067-43) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=7 status=0 QTime=0
+2020-07-20 17:02:13.595 INFO  (qtp23598067-23) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=7 status=0 QTime=0
+2020-07-20 17:02:29.279 INFO  (qtp23598067-16) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=7 status=0 QTime=0
+2020-07-20 17:02:45.721 INFO  (qtp23598067-21) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=7 status=0 QTime=0
+2020-07-20 17:02:56.226 INFO  (qtp23598067-43) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=7 status=0 QTime=0
+2020-07-20 17:04:20.560 INFO  (qtp23598067-23) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=7 status=0 QTime=0
+2020-07-20 17:29:30.277 INFO  (qtp23598067-25) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=7 status=0 QTime=0
+2020-07-20 17:29:39.961 INFO  (qtp23598067-21) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=id:(64b93231\-05bf\-4151\-9656\-7b7cc2a67ed8)&rows=100000000&wt=xml} hits=1 status=0 QTime=0
+2020-07-20 17:29:56.007 INFO  (qtp23598067-43) [   x:SKSCore] o.a.s.u.p.LogUpdateProcessorFactory [SKSCore]  webapp=/solr path=/update params={version=2.2&wt=xml}{add=[98150313-9bcc-41c3-b6cf-9018c8cb048e (1672757846738993152)]} 0 6
+2020-07-20 17:29:56.454 INFO  (searcherExecutor-15-thread-1-processing-x:SKSCore) [   x:SKSCore] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2020-07-20 17:29:56.458 INFO  (searcherExecutor-15-thread-1-processing-x:SKSCore) [   x:SKSCore] o.a.s.c.SolrCore [SKSCore]  Registered new searcher autowarm time: 0 ms
+2020-07-20 17:29:56.459 INFO  (qtp23598067-23) [   x:SKSCore] o.a.s.u.p.LogUpdateProcessorFactory [SKSCore]  webapp=/solr path=/update params={version=2.2&wt=xml}{commit=} 0 441
+2020-07-20 17:30:01.511 INFO  (qtp23598067-17) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=8 status=0 QTime=0
+2020-07-20 17:31:54.626 INFO  (qtp23598067-21) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=8 status=0 QTime=0
+2020-07-20 17:31:56.946 INFO  (qtp23598067-43) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=id:(64b93231\-05bf\-4151\-9656\-7b7cc2a67ed8)&rows=100000000&wt=xml} hits=1 status=0 QTime=1
+2020-07-20 17:32:09.673 INFO  (qtp23598067-23) [   x:SKSCore] o.a.s.u.p.LogUpdateProcessorFactory [SKSCore]  webapp=/solr path=/update params={version=2.2&wt=xml}{add=[cf09f109-0f4e-4316-8406-089c180ba7b0 (1672757986897952768)]} 0 5
+2020-07-20 17:32:10.289 INFO  (searcherExecutor-15-thread-1-processing-x:SKSCore) [   x:SKSCore] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2020-07-20 17:32:10.292 INFO  (searcherExecutor-15-thread-1-processing-x:SKSCore) [   x:SKSCore] o.a.s.c.SolrCore [SKSCore]  Registered new searcher autowarm time: 0 ms
+2020-07-20 17:32:10.293 INFO  (qtp23598067-17) [   x:SKSCore] o.a.s.u.p.LogUpdateProcessorFactory [SKSCore]  webapp=/solr path=/update params={version=2.2&wt=xml}{commit=} 0 609
+2020-07-20 17:32:15.341 INFO  (qtp23598067-21) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=9 status=0 QTime=0
+2020-07-20 17:32:39.348 INFO  (qtp23598067-43) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=id:(64b93231\-05bf\-4151\-9656\-7b7cc2a67ed8)&rows=100000000&wt=xml} hits=1 status=0 QTime=0
+2020-07-20 17:33:05.082 INFO  (qtp23598067-23) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=9 status=0 QTime=0
+2020-07-20 17:34:47.578 INFO  (qtp23598067-17) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=9 status=0 QTime=0
+2020-07-20 17:34:52.321 INFO  (qtp23598067-21) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=id:(64b93231\-05bf\-4151\-9656\-7b7cc2a67ed8)&rows=100000000&wt=xml} hits=1 status=0 QTime=0
+2020-07-20 17:35:10.379 INFO  (qtp23598067-43) [   x:SKSCore] o.a.s.u.p.LogUpdateProcessorFactory [SKSCore]  webapp=/solr path=/update params={version=2.2&wt=xml}{add=[64b93231-05bf-4151-9656-7b7cc2a67ed8 (1672758176382976000)]} 0 5
+2020-07-20 17:35:10.856 INFO  (searcherExecutor-15-thread-1-processing-x:SKSCore) [   x:SKSCore] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2020-07-20 17:35:10.859 INFO  (searcherExecutor-15-thread-1-processing-x:SKSCore) [   x:SKSCore] o.a.s.c.SolrCore [SKSCore]  Registered new searcher autowarm time: 0 ms
+2020-07-20 17:35:10.870 INFO  (qtp23598067-23) [   x:SKSCore] o.a.s.u.p.LogUpdateProcessorFactory [SKSCore]  webapp=/solr path=/update params={version=2.2&wt=xml}{commit=} 0 479
+2020-07-20 17:35:15.916 INFO  (qtp23598067-17) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=9 status=0 QTime=0
+2020-07-20 17:35:26.863 INFO  (qtp23598067-21) [   x:SKSCore] o.a.s.u.p.LogUpdateProcessorFactory [SKSCore]  webapp=/solr path=/update params={version=2.2&wt=xml}{delete=[da55a392-0df2-462e-a7f4-2741f4ddacf5 (-1672758193670848512)]} 0 2
+2020-07-20 17:35:26.985 INFO  (searcherExecutor-15-thread-1-processing-x:SKSCore) [   x:SKSCore] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2020-07-20 17:35:26.989 INFO  (searcherExecutor-15-thread-1-processing-x:SKSCore) [   x:SKSCore] o.a.s.c.SolrCore [SKSCore]  Registered new searcher autowarm time: 0 ms
+2020-07-20 17:35:27.001 INFO  (qtp23598067-43) [   x:SKSCore] o.a.s.u.p.LogUpdateProcessorFactory [SKSCore]  webapp=/solr path=/update params={version=2.2&wt=xml}{commit=} 0 129
+2020-07-20 17:35:32.035 INFO  (qtp23598067-23) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=8 status=0 QTime=0
+2020-07-20 17:35:36.630 INFO  (qtp23598067-17) [   x:SKSCore] o.a.s.u.p.LogUpdateProcessorFactory [SKSCore]  webapp=/solr path=/update params={version=2.2&wt=xml}{delete=[f609b8dc-96a4-4614-bcc8-1484f8d355ff (-1672758203911241728)]} 0 1
+2020-07-20 17:35:36.725 INFO  (searcherExecutor-15-thread-1-processing-x:SKSCore) [   x:SKSCore] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2020-07-20 17:35:36.729 INFO  (searcherExecutor-15-thread-1-processing-x:SKSCore) [   x:SKSCore] o.a.s.c.SolrCore [SKSCore]  Registered new searcher autowarm time: 0 ms
+2020-07-20 17:35:36.740 INFO  (qtp23598067-21) [   x:SKSCore] o.a.s.u.p.LogUpdateProcessorFactory [SKSCore]  webapp=/solr path=/update params={version=2.2&wt=xml}{commit=} 0 101
+2020-07-20 17:35:41.772 INFO  (qtp23598067-43) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=7 status=0 QTime=0
+2020-07-20 17:35:52.753 INFO  (qtp23598067-23) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=id:(64b93231\-05bf\-4151\-9656\-7b7cc2a67ed8)&rows=100000000&wt=xml} hits=1 status=0 QTime=0
+2020-07-20 17:36:06.149 INFO  (qtp23598067-17) [   x:SKSCore] o.a.s.u.p.LogUpdateProcessorFactory [SKSCore]  webapp=/solr path=/update params={version=2.2&wt=xml}{add=[64b93231-05bf-4151-9656-7b7cc2a67ed8 (1672758234862059520)]} 0 4
+2020-07-20 17:36:06.931 INFO  (searcherExecutor-15-thread-1-processing-x:SKSCore) [   x:SKSCore] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2020-07-20 17:36:06.934 INFO  (searcherExecutor-15-thread-1-processing-x:SKSCore) [   x:SKSCore] o.a.s.c.SolrCore [SKSCore]  Registered new searcher autowarm time: 0 ms
+2020-07-20 17:36:06.943 INFO  (qtp23598067-21) [   x:SKSCore] o.a.s.u.p.LogUpdateProcessorFactory [SKSCore]  webapp=/solr path=/update params={version=2.2&wt=xml}{commit=} 0 789
+2020-07-20 17:36:11.984 INFO  (qtp23598067-43) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=7 status=0 QTime=0
+2020-07-20 17:36:32.198 INFO  (qtp23598067-23) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=(firstname:aparna+OR+lastname:aparna+OR+address:aparna+OR+salary:aparna+OR+department:aparna)&rows=100000000&wt=xml} hits=0 status=0 QTime=2
+2020-07-20 17:36:43.316 INFO  (qtp23598067-17) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=7 status=0 QTime=0
+2020-07-20 17:36:52.436 INFO  (qtp23598067-21) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=(firstname:Aparna+OR+lastname:Aparna+OR+address:Aparna+OR+salary:Aparna+OR+department:Aparna)&rows=100000000&wt=xml} hits=1 status=0 QTime=1
+2020-07-20 17:36:57.259 INFO  (qtp23598067-43) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=(firstname:aparna+OR+lastname:aparna+OR+address:aparna+OR+salary:aparna+OR+department:aparna)&rows=100000000&wt=xml} hits=0 status=0 QTime=0
+2020-07-20 17:37:02.937 INFO  (qtp23598067-23) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=(firstname:Aparna+OR+lastname:Aparna+OR+address:Aparna+OR+salary:Aparna+OR+department:Aparna)&rows=100000000&wt=xml} hits=1 status=0 QTime=0
+2020-07-20 17:38:32.828 INFO  (qtp23598067-17) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=7 status=0 QTime=0
+2020-07-20 17:38:39.671 INFO  (qtp23598067-21) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=(firstname:prakash+OR+lastname:prakash+OR+address:prakash+OR+salary:prakash+OR+department:prakash)&rows=100000000&wt=xml} hits=1 status=0 QTime=1
+2020-07-20 17:38:43.834 INFO  (qtp23598067-43) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=7 status=0 QTime=0
+2020-07-20 17:38:51.332 INFO  (qtp23598067-23) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=(firstname:ask+OR+lastname:ask+OR+address:ask+OR+salary:ask+OR+department:ask)&rows=100000000&wt=xml} hits=0 status=0 QTime=1
+2020-07-20 17:39:00.053 INFO  (qtp23598067-17) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=(firstname:ashok+OR+lastname:ashok+OR+address:ashok+OR+salary:ashok+OR+department:ashok)&rows=100000000&wt=xml} hits=0 status=0 QTime=0
+2020-07-20 17:42:14.542 INFO  (qtp23598067-18) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=7 status=0 QTime=0
+2020-07-20 17:42:24.752 INFO  (qtp23598067-43) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=7 status=0 QTime=0
+2020-07-20 17:42:26.419 INFO  (qtp23598067-23) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=id:(b8ed19b6\-2d27\-4edb\-bf80\-6d5eaf64f75b)&rows=100000000&wt=xml} hits=1 status=0 QTime=0
+2020-07-20 17:42:32.033 INFO  (qtp23598067-17) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=7 status=0 QTime=0
+2020-07-20 17:44:19.882 INFO  (qtp23598067-25) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={_=1595255964996} hits=0 status=0 QTime=2
+2020-07-20 17:44:24.026 INFO  (qtp23598067-25) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1595267063955} status=0 QTime=0
+2020-07-20 17:44:24.107 INFO  (qtp23598067-43) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1595267063956} status=0 QTime=80
+2020-07-20 17:44:26.658 INFO  (qtp23598067-18) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&_=1595267064002} hits=7 status=0 QTime=0
+2020-07-20 17:44:44.117 INFO  (qtp23598067-43) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&fq=firstname:Shibaprasad&_=1595267064002} hits=1 status=0 QTime=1
+2020-07-20 17:44:53.268 INFO  (qtp23598067-18) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&fq=firstname:Shibapr&_=1595267064002} hits=0 status=0 QTime=1
+2020-07-20 17:45:02.383 INFO  (qtp23598067-43) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&fq=firstname:Shibapr*&_=1595267064002} hits=1 status=0 QTime=7
+2020-07-20 17:45:12.590 INFO  (qtp23598067-18) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&fq=firstname:shibapr*&_=1595267064002} hits=0 status=0 QTime=2
+2020-07-20 17:45:36.112 INFO  (qtp23598067-43) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=firstname:shibapr*&_=1595267064002} hits=0 status=0 QTime=2
+2020-07-20 17:45:47.287 INFO  (qtp23598067-18) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={fq=firstname:shibapr*&_=1595267064002} hits=0 status=0 QTime=0
+2020-07-20 17:45:56.484 INFO  (qtp23598067-43) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={fq=firstname:Shibapr*&_=1595267064002} hits=0 status=0 QTime=0
+2020-07-20 17:46:00.630 INFO  (qtp23598067-18) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={fq=firstname:Shibapr*&_=1595267064002} hits=0 status=0 QTime=1
+2020-07-20 18:14:59.450 INFO  (qtp23598067-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1595268899365} status=0 QTime=0
+2020-07-20 18:14:59.545 INFO  (qtp23598067-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1595268899365} status=0 QTime=94
+2020-07-20 18:15:03.529 INFO  (qtp23598067-22) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&_=1595268899423} hits=7 status=0 QTime=0
+2020-07-20 18:15:18.707 ERROR (qtp23598067-17) [   x:SKSCore] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse '"lastname":"Patra"': Encountered " ":" ": "" at line 1, column 10.
+Was expecting one of:
+    <EOF> 
+    <AND> ...
+    <OR> ...
+    <NOT> ...
+    "+" ...
+    "-" ...
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    "^" ...
+    <QUOTED> ...
+    <TERM> ...
+    <FUZZY_SLOP> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:220)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:305)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:214)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2606)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:812)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:588)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:415)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:345)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1596)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:545)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:590)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1610)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1300)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:485)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1580)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1215)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:221)
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:500)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:547)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:273)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:375)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:806)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:938)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.solr.search.SyntaxError: Cannot parse '"lastname":"Patra"': Encountered " ":" ": "" at line 1, column 10.
+Was expecting one of:
+    <EOF> 
+    <AND> ...
+    <OR> ...
+    <NOT> ...
+    "+" ...
+    "-" ...
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    "^" ...
+    <QUOTED> ...
+    <TERM> ...
+    <FUZZY_SLOP> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:267)
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:174)
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:209)
+	... 44 more
+Caused by: org.apache.solr.parser.ParseException: Encountered " ":" ": "" at line 1, column 10.
+Was expecting one of:
+    <EOF> 
+    <AND> ...
+    <OR> ...
+    <NOT> ...
+    "+" ...
+    "-" ...
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    "^" ...
+    <QUOTED> ...
+    <TERM> ...
+    <FUZZY_SLOP> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.parser.QueryParser.generateParseException(QueryParser.java:885)
+	at org.apache.solr.parser.QueryParser.jj_consume_token(QueryParser.java:767)
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:132)
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:263)
+	... 47 more
+
+2020-07-20 18:15:18.707 INFO  (qtp23598067-17) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&fq="lastname":"Patra"&_=1595268899423} status=400 QTime=1
+2020-07-20 18:15:25.709 ERROR (qtp23598067-22) [   x:SKSCore] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse '"lastname":"Patra"': Encountered " ":" ": "" at line 1, column 10.
+Was expecting one of:
+    <EOF> 
+    <AND> ...
+    <OR> ...
+    <NOT> ...
+    "+" ...
+    "-" ...
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    "^" ...
+    <QUOTED> ...
+    <TERM> ...
+    <FUZZY_SLOP> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:220)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:305)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:214)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2606)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:812)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:588)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:415)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:345)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1596)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:545)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:590)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1610)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1300)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:485)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1580)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1215)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:221)
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:500)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:547)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:273)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:375)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:806)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:938)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.solr.search.SyntaxError: Cannot parse '"lastname":"Patra"': Encountered " ":" ": "" at line 1, column 10.
+Was expecting one of:
+    <EOF> 
+    <AND> ...
+    <OR> ...
+    <NOT> ...
+    "+" ...
+    "-" ...
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    "^" ...
+    <QUOTED> ...
+    <TERM> ...
+    <FUZZY_SLOP> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:267)
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:174)
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:162)
+	... 44 more
+Caused by: org.apache.solr.parser.ParseException: Encountered " ":" ": "" at line 1, column 10.
+Was expecting one of:
+    <EOF> 
+    <AND> ...
+    <OR> ...
+    <NOT> ...
+    "+" ...
+    "-" ...
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    "^" ...
+    <QUOTED> ...
+    <TERM> ...
+    <FUZZY_SLOP> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.parser.QueryParser.generateParseException(QueryParser.java:885)
+	at org.apache.solr.parser.QueryParser.jj_consume_token(QueryParser.java:767)
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:132)
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:263)
+	... 47 more
+
+2020-07-20 18:15:25.709 INFO  (qtp23598067-22) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q="lastname":"Patra"&_=1595268899423} status=400 QTime=2
+2020-07-20 18:15:38.847 INFO  (qtp23598067-17) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={fq=lastname:Patra&_=1595268899423} hits=0 status=0 QTime=1
+2020-07-20 18:15:46.952 INFO  (qtp23598067-22) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=lastname:Patra&_=1595268899423} hits=1 status=0 QTime=0
+2020-07-20 18:15:55.280 INFO  (qtp23598067-17) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=lastname:patra&_=1595268899423} hits=0 status=0 QTime=0
+2020-07-20 18:16:04.493 INFO  (qtp23598067-22) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=lastname:Patra*&_=1595268899423} hits=1 status=0 QTime=1
+2020-07-20 18:17:06.117 INFO  (qtp23598067-18) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=7 status=0 QTime=0
+2020-07-20 18:17:15.788 INFO  (qtp23598067-43) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=(firstname:khun*+OR+lastname:khun*+OR+address:khun*+OR+salary:khun*+OR+department:khun*)&rows=100000000&wt=xml} hits=0 status=0 QTime=7
+2020-07-20 18:17:22.197 INFO  (qtp23598067-16) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=(firstname:khuntia*+OR+lastname:khuntia*+OR+address:khuntia*+OR+salary:khuntia*+OR+department:khuntia*)&rows=100000000&wt=xml} hits=0 status=0 QTime=6
+2020-07-20 18:17:23.171 INFO  (qtp23598067-17) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=(firstname:khuntia*+OR+lastname:khuntia*+OR+address:khuntia*+OR+salary:khuntia*+OR+department:khuntia*)&rows=100000000&wt=xml} hits=0 status=0 QTime=2
+2020-07-20 18:17:27.271 INFO  (qtp23598067-18) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=7 status=0 QTime=0
+2020-07-20 18:17:32.854 INFO  (qtp23598067-43) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=(firstname:Khuntia*+OR+lastname:Khuntia*+OR+address:Khuntia*+OR+salary:Khuntia*+OR+department:Khuntia*)&rows=100000000&wt=xml} hits=3 status=0 QTime=6
+2020-07-20 18:17:38.265 INFO  (qtp23598067-16) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=(firstname:khuntia*+OR+lastname:khuntia*+OR+address:khuntia*+OR+salary:khuntia*+OR+department:khuntia*)&rows=100000000&wt=xml} hits=0 status=0 QTime=1
+2020-07-20 18:17:53.467 INFO  (qtp23598067-17) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=lastname:patra*&_=1595268899423} hits=0 status=0 QTime=1
+2020-07-20 18:18:04.887 INFO  (qtp23598067-21) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=lastname:Patra&_=1595268899423} hits=1 status=0 QTime=0
+2020-07-20 18:18:08.895 INFO  (qtp23598067-17) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=lastname:Patr&_=1595268899423} hits=0 status=0 QTime=0
+2020-07-20 18:18:13.864 INFO  (qtp23598067-21) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=lastname:Patr*&_=1595268899423} hits=1 status=0 QTime=1
+2020-07-20 18:18:19.795 INFO  (qtp23598067-17) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=lastname:patr*&_=1595268899423} hits=0 status=0 QTime=1
+2020-07-20 18:18:25.303 INFO  (qtp23598067-21) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=lastname:Patr*&_=1595268899423} hits=1 status=0 QTime=0
+2020-07-20 18:18:36.058 INFO  (qtp23598067-17) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=(firstname:Khunt*+OR+lastname:Khunt*+OR+address:Khunt*+OR+salary:Khunt*+OR+department:Khunt*)&rows=100000000&wt=xml} hits=3 status=0 QTime=4
+2020-07-20 18:18:56.187 INFO  (qtp23598067-17) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=lastname:*patr*&_=1595268899423} hits=0 status=0 QTime=5
+2020-07-20 18:25:44.756 INFO  (qtp23598067-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1595269544667} status=0 QTime=0
+2020-07-20 18:25:44.865 INFO  (qtp23598067-43) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1595269544668} status=0 QTime=108
+2020-07-20 18:25:46.328 INFO  (qtp23598067-24) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&_=1595269544731} hits=7 status=0 QTime=0
+2020-07-20 18:26:02.877 INFO  (qtp23598067-43) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=firstname:Shibaprasad&_=1595269544731} hits=1 status=0 QTime=1
+2020-07-20 18:26:07.710 INFO  (qtp23598067-24) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=firstname:shibaprasad&_=1595269544731} hits=0 status=0 QTime=0
+2020-07-20 18:26:18.511 INFO  (qtp23598067-43) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={_=1595269544731} hits=0 status=0 QTime=0
+2020-07-20 18:26:23.127 INFO  (qtp23598067-43) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1595269583041} status=0 QTime=0
+2020-07-20 18:26:23.220 INFO  (qtp23598067-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1595269583042} status=0 QTime=91
+2020-07-20 18:26:24.716 INFO  (qtp23598067-18) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&_=1595269583102} hits=7 status=0 QTime=0
+2020-07-20 18:26:36.976 INFO  (qtp23598067-23) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&fq=firstname:shibaprasad&_=1595269583102} hits=0 status=0 QTime=0
+2020-07-20 18:26:43.145 INFO  (qtp23598067-18) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&fq=firstname:Shibaprasad&_=1595269583102} hits=1 status=0 QTime=0
+2020-07-20 18:27:05.955 INFO  (qtp23598067-16) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=7 status=0 QTime=1
+2020-07-20 18:27:25.809 INFO  (qtp23598067-21) [   x:SKSCore] o.a.s.u.p.LogUpdateProcessorFactory [SKSCore]  webapp=/solr path=/update params={version=2.2&wt=xml}{add=[a25a5bed-f1bb-4269-af17-270eee240f28 (1672761464117526528)]} 0 7
+2020-07-20 18:27:26.181 INFO  (searcherExecutor-15-thread-1-processing-x:SKSCore) [   x:SKSCore] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2020-07-20 18:27:26.186 INFO  (searcherExecutor-15-thread-1-processing-x:SKSCore) [   x:SKSCore] o.a.s.c.SolrCore [SKSCore]  Registered new searcher autowarm time: 0 ms
+2020-07-20 18:27:26.187 INFO  (qtp23598067-23) [   x:SKSCore] o.a.s.u.p.LogUpdateProcessorFactory [SKSCore]  webapp=/solr path=/update params={version=2.2&wt=xml}{commit=} 0 365
+2020-07-20 18:27:31.266 INFO  (qtp23598067-24) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=8 status=0 QTime=0
+2020-07-20 18:28:00.190 INFO  (qtp23598067-23) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&_=1595269583102} hits=8 status=0 QTime=0
+2020-07-20 18:28:19.580 INFO  (qtp23598067-18) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=firstname:Test&_=1595269583102} hits=1 status=0 QTime=2
+2020-07-20 18:28:29.720 INFO  (qtp23598067-23) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=firstname:test&_=1595269583102} hits=0 status=0 QTime=0
+2020-07-20 18:30:18.207 INFO  (qtp23598067-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1595269818120} status=0 QTime=0
+2020-07-20 18:30:18.309 INFO  (qtp23598067-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1595269818120} status=0 QTime=101
+2020-07-20 18:30:20.930 INFO  (qtp23598067-22) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&_=1595269818183} hits=8 status=0 QTime=0
+2020-07-20 18:30:35.030 INFO  (qtp23598067-16) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=firstname:Shibaprasad&_=1595269818183} hits=1 status=0 QTime=1
+2020-07-20 18:30:40.916 INFO  (qtp23598067-22) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=firstname:shibaprasad&_=1595269818183} hits=0 status=0 QTime=0
+2020-07-20 18:30:50.676 INFO  (qtp23598067-16) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={fq=firstname:shibaprasad&_=1595269818183} hits=0 status=0 QTime=1
+2020-07-20 18:32:47.426 INFO  (qtp23598067-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1595269967335} status=0 QTime=0
+2020-07-20 18:32:47.522 INFO  (qtp23598067-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1595269967336} status=0 QTime=94
+2020-07-20 18:32:49.913 INFO  (qtp23598067-17) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&_=1595269967400} hits=8 status=0 QTime=0
+2020-07-20 18:33:04.591 INFO  (qtp23598067-21) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=firstname:Shibaprasad&_=1595269967400} hits=1 status=0 QTime=0
+2020-07-20 18:33:10.742 INFO  (qtp23598067-17) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=firstname:shibaprasad&_=1595269967400} hits=0 status=0 QTime=0
+2020-07-20 18:33:17.388 INFO  (qtp23598067-16) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=8 status=0 QTime=0
+2020-07-20 18:33:23.544 INFO  (qtp23598067-18) [   x:SKSCore] o.a.s.u.p.LogUpdateProcessorFactory [SKSCore]  webapp=/solr path=/update params={version=2.2&wt=xml}{delete=[64b93231-05bf-4151-9656-7b7cc2a67ed8 (-1672761839234056192)]} 0 3
+2020-07-20 18:33:23.691 INFO  (searcherExecutor-15-thread-1-processing-x:SKSCore) [   x:SKSCore] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2020-07-20 18:33:23.695 INFO  (searcherExecutor-15-thread-1-processing-x:SKSCore) [   x:SKSCore] o.a.s.c.SolrCore [SKSCore]  Registered new searcher autowarm time: 0 ms
+2020-07-20 18:33:23.714 INFO  (qtp23598067-22) [   x:SKSCore] o.a.s.u.p.LogUpdateProcessorFactory [SKSCore]  webapp=/solr path=/update params={version=2.2&wt=xml}{commit=} 0 161
+2020-07-20 18:33:51.558 INFO  (qtp23598067-21) [   x:SKSCore] o.a.s.u.p.LogUpdateProcessorFactory [SKSCore]  webapp=/solr path=/update params={version=2.2&wt=xml}{add=[76e912d5-925f-422d-8a76-b8874a549b1c (1672761868603621376)]} 0 8
+2020-07-20 18:33:51.909 INFO  (searcherExecutor-15-thread-1-processing-x:SKSCore) [   x:SKSCore] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2020-07-20 18:33:51.913 INFO  (searcherExecutor-15-thread-1-processing-x:SKSCore) [   x:SKSCore] o.a.s.c.SolrCore [SKSCore]  Registered new searcher autowarm time: 0 ms
+2020-07-20 18:33:51.914 INFO  (qtp23598067-16) [   x:SKSCore] o.a.s.u.p.LogUpdateProcessorFactory [SKSCore]  webapp=/solr path=/update params={version=2.2&wt=xml}{commit=} 0 350
+2020-07-20 18:33:57.052 INFO  (qtp23598067-18) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=8 status=0 QTime=2
+2020-07-20 18:34:09.591 INFO  (qtp23598067-22) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=(firstname:Aparna*+OR+lastname:Aparna*+OR+address:Aparna*+OR+salary:Aparna*+OR+department:Aparna*)&rows=100000000&wt=xml} hits=1 status=0 QTime=7
+2020-07-20 18:34:55.512 INFO  (qtp23598067-21) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=8 status=0 QTime=0
+2020-07-20 18:35:23.713 INFO  (qtp23598067-16) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=8 status=0 QTime=0
+2020-07-20 18:35:35.484 INFO  (qtp23598067-18) [   x:SKSCore] o.a.s.u.p.LogUpdateProcessorFactory [SKSCore]  webapp=/solr path=/update params={version=2.2&wt=xml}{delete=[76e912d5-925f-422d-8a76-b8874a549b1c (-1672761977582125056)]} 0 3
+2020-07-20 18:35:35.734 INFO  (searcherExecutor-15-thread-1-processing-x:SKSCore) [   x:SKSCore] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2020-07-20 18:35:35.737 INFO  (searcherExecutor-15-thread-1-processing-x:SKSCore) [   x:SKSCore] o.a.s.c.SolrCore [SKSCore]  Registered new searcher autowarm time: 0 ms
+2020-07-20 18:35:35.750 INFO  (qtp23598067-22) [   x:SKSCore] o.a.s.u.p.LogUpdateProcessorFactory [SKSCore]  webapp=/solr path=/update params={version=2.2&wt=xml}{commit=} 0 257
+2020-07-20 18:35:40.789 INFO  (qtp23598067-25) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=7 status=0 QTime=1
+2020-07-20 18:35:49.509 INFO  (qtp23598067-16) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=id:(a25a5bed\-f1bb\-4269\-af17\-270eee240f28)&rows=100000000&wt=xml} hits=1 status=0 QTime=0
+2020-07-20 18:36:12.578 INFO  (qtp23598067-18) [   x:SKSCore] o.a.s.u.p.LogUpdateProcessorFactory [SKSCore]  webapp=/solr path=/update params={version=2.2&wt=xml}{add=[a25a5bed-f1bb-4269-af17-270eee240f28 (1672762016474857472)]} 0 6
+2020-07-20 18:36:12.991 INFO  (searcherExecutor-15-thread-1-processing-x:SKSCore) [   x:SKSCore] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2020-07-20 18:36:12.996 INFO  (searcherExecutor-15-thread-1-processing-x:SKSCore) [   x:SKSCore] o.a.s.c.SolrCore [SKSCore]  Registered new searcher autowarm time: 0 ms
+2020-07-20 18:36:13.009 INFO  (qtp23598067-17) [   x:SKSCore] o.a.s.u.p.LogUpdateProcessorFactory [SKSCore]  webapp=/solr path=/update params={version=2.2&wt=xml}{commit=} 0 417
+2020-07-20 18:36:18.149 INFO  (qtp23598067-25) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=7 status=0 QTime=3
+2020-07-20 18:38:33.577 INFO  (qtp23598067-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1595270313491} status=0 QTime=0
+2020-07-20 18:38:33.668 INFO  (qtp23598067-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1595270313491} status=0 QTime=90
+2020-07-20 18:38:40.190 INFO  (qtp23598067-22) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&_=1595270313552} hits=7 status=0 QTime=0
+2020-07-20 18:38:53.548 INFO  (qtp23598067-18) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=firstname:Shibaprasad&_=1595270313552} hits=1 status=0 QTime=1
+2020-07-20 18:38:58.901 INFO  (qtp23598067-22) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=firstname:shibaprasad&_=1595270313552} hits=0 status=0 QTime=0
+2020-07-20 18:39:09.147 INFO  (qtp23598067-18) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=firstname:shibaprasad*&_=1595270313552} hits=0 status=0 QTime=3
+2020-07-20 18:40:38.227 INFO  (qtp23598067-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1595270438149} status=0 QTime=0
+2020-07-20 18:40:38.320 INFO  (qtp23598067-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1595270438150} status=0 QTime=92
+2020-07-20 18:40:40.889 INFO  (qtp23598067-21) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&_=1595270438203} hits=7 status=0 QTime=0
+2020-07-20 18:40:54.126 INFO  (qtp23598067-17) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=firstname:Shibaprasad&_=1595270438203} hits=1 status=0 QTime=0
+2020-07-20 18:40:59.670 INFO  (qtp23598067-21) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=firstname:shibaprasad&_=1595270438203} hits=0 status=0 QTime=0
+2020-07-20 18:46:15.814 INFO  (qtp23598067-25) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1595270775711} status=0 QTime=0
+2020-07-20 18:46:15.926 INFO  (qtp23598067-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1595270775712} status=0 QTime=112
+2020-07-20 18:46:19.581 INFO  (qtp23598067-16) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=firstname:shibaprasad&_=1595270775786} hits=0 status=0 QTime=1
+2020-07-20 18:46:41.230 INFO  (qtp23598067-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1595270801133} status=0 QTime=0
+2020-07-20 18:46:41.330 INFO  (qtp23598067-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1595270801134} status=0 QTime=99
+2020-07-20 18:46:48.827 INFO  (qtp23598067-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1595270808753} status=0 QTime=0
+2020-07-20 18:46:48.924 INFO  (qtp23598067-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1595270808753} status=0 QTime=95
+2020-07-20 18:46:50.011 INFO  (qtp23598067-16) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&_=1595270808803} hits=7 status=0 QTime=0
+2020-07-20 18:47:05.312 INFO  (qtp23598067-18) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=firstname:shibaprasad&_=1595270808803} hits=0 status=0 QTime=0
+2020-07-20 18:48:40.274 INFO  (ShutdownMonitor) [   ] o.e.j.s.AbstractConnector Stopped ServerConnector@177849e{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8983}
+2020-07-20 18:48:40.274 INFO  (ShutdownMonitor) [   ] o.e.j.s.session node0 Stopped scavenging
+2020-07-20 18:48:40.277 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=2292837
+2020-07-20 18:48:40.279 INFO  (coreCloseExecutor-21-thread-1) [   ] o.a.s.c.SolrCore [SKSCore]  CLOSING SolrCore org.apache.solr.core.SolrCore@b64841
+2020-07-20 18:48:40.279 INFO  (coreCloseExecutor-21-thread-1) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.SKSCore tag=SolrCore@b64841
+2020-07-20 18:48:40.279 INFO  (coreCloseExecutor-21-thread-1) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@9999cf: rootName = null, domain = solr.core.SKSCore, service url = null, agent id = null] for registry solr.core.SKSCore/com.codahale.metrics.MetricRegistry@1d1eb2
+2020-07-20 18:48:40.297 INFO  (coreCloseExecutor-21-thread-1) [   ] o.a.s.u.DirectUpdateHandler2 Committing on IndexWriter.close()  ... SKIPPED (unnecessary).
+2020-07-20 18:48:40.326 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node tag=null
+2020-07-20 18:48:40.328 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@1fdb014: rootName = null, domain = solr.node, service url = null, agent id = null] for registry solr.node/com.codahale.metrics.MetricRegistry@14f6a12
+2020-07-20 18:48:40.332 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm tag=null
+2020-07-20 18:48:40.332 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@1a3be26: rootName = null, domain = solr.jvm, service url = null, agent id = null] for registry solr.jvm/com.codahale.metrics.MetricRegistry@184fc91
+2020-07-20 18:48:40.333 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty tag=null
+2020-07-20 18:48:40.333 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@87d447: rootName = null, domain = solr.jetty, service url = null, agent id = null] for registry solr.jetty/com.codahale.metrics.MetricRegistry@14ef8cb
+2020-07-20 18:48:40.350 INFO  (ShutdownMonitor) [   ] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@24a83d{/solr,null,UNAVAILABLE}{C:\SKSFile\solr\server/solr-webapp/webapp}

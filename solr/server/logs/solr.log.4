@@ -1,0 +1,110 @@
+2020-07-19 17:53:54.595 INFO  (main) [   ] o.e.j.u.log Logging initialized @1158ms to org.eclipse.jetty.util.log.Slf4jLog
+2020-07-19 17:53:54.674 WARN  (main) [   ] o.e.j.x.XmlConfiguration Ignored arg: <Arg name="threadpool">
+    <New id="threadpool" class="com.codahale.metrics.jetty9.InstrumentedQueuedThreadPool"><Arg name="registry">
+        <Call id="solrJettyMetricRegistry" name="getOrCreate" class="com.codahale.metrics.SharedMetricRegistries"><Arg>solr.jetty</Arg></Call>
+      </Arg></New>
+  </Arg>
+2020-07-19 17:53:54.771 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.27.v20200227; built: 2020-02-27T18:37:21.340Z; git: a304fd9f351f337e7c0e2a7c28878dd536149c6c; jvm 1.8.0_181-b13
+2020-07-19 17:53:54.801 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///C:/SKSFile/solr/server/contexts/] at interval 0
+2020-07-19 17:53:55.523 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2020-07-19 17:53:55.531 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
+2020-07-19 17:53:55.531 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
+2020-07-19 17:53:55.532 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 600000ms
+2020-07-19 17:53:55.577 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2020-07-19 17:53:55.582 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 8.6.0
+2020-07-19 17:53:55.582 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2020-07-19 17:53:55.582 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: C:\SKSFile\solr
+2020-07-19 17:53:55.582 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2020-07-19T17:53:55.582Z
+2020-07-19 17:53:55.590 INFO  (main) [   ] o.a.s.c.SolrPaths Using system property solr.solr.home: C:\SKSFile\solr\server\solr
+2020-07-19 17:53:55.595 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from C:\SKSFile\solr\server\solr\solr.xml
+2020-07-19 17:53:55.682 INFO  (main) [   ] o.a.s.c.SolrXmlConfig MBean server found: com.sun.jmx.mbeanserver.JmxMBeanServer@e61fe6, but no JMX reporters were configured - adding default JMX reporter.
+2020-07-19 17:53:57.672 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory Host whitelist initialized: WhitelistHostChecker [whitelistHosts=null, whitelistHostCheckingEnabled=true]
+2020-07-19 17:53:58.073 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@c51bb7[provider=null,keyStore=null,trustStore=null]
+2020-07-19 17:53:58.073 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@c51bb7[provider=null,keyStore=null,trustStore=null]
+2020-07-19 17:53:58.146 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@bdc168[provider=null,keyStore=null,trustStore=null]
+2020-07-19 17:53:58.146 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@bdc168[provider=null,keyStore=null,trustStore=null]
+2020-07-19 17:53:58.184 WARN  (main) [   ] o.a.s.c.CoreContainer Not all security plugins configured!  authentication=disabled authorization=disabled.  Solr is only as secure as you make it. Consider configuring authentication/authorization before exposing Solr to users internal or external.  See https://s.apache.org/solrsecurity for more info
+2020-07-19 17:53:58.291 INFO  (main) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
+2020-07-19 17:53:58.292 INFO  (main) [   ] o.a.s.h.a.MetricsHistoryHandler No .system collection, keeping metrics history in memory.
+2020-07-19 17:53:58.346 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.node' (registry 'solr.node') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@e61fe6
+2020-07-19 17:53:58.346 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jvm' (registry 'solr.jvm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@e61fe6
+2020-07-19 17:53:58.350 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jetty' (registry 'solr.jetty') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@e61fe6
+2020-07-19 17:53:58.384 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath C:\SKSFile\solr\server\solr
+2020-07-19 17:53:58.384 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [SKSCore]
+2020-07-19 17:53:58.451 INFO  (coreLoadExecutor-13-thread-1) [   x:SKSCore] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.6.0
+2020-07-19 17:53:58.622 INFO  (coreLoadExecutor-13-thread-1) [   x:SKSCore] o.a.s.s.IndexSchema Schema name=default-config
+2020-07-19 17:53:59.566 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@24a83d{/solr,file:///C:/SKSFile/solr/server/solr-webapp/webapp/,AVAILABLE}{C:\SKSFile\solr\server/solr-webapp/webapp}
+2020-07-19 17:53:59.577 INFO  (main) [   ] o.e.j.s.AbstractConnector Started ServerConnector@177849e{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8983}
+2020-07-19 17:53:59.577 INFO  (main) [   ] o.e.j.s.Server Started @6141ms
+2020-07-19 17:53:59.917 INFO  (coreLoadExecutor-13-thread-1) [   x:SKSCore] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2020-07-19 17:53:59.979 INFO  (coreLoadExecutor-13-thread-1) [   x:SKSCore] o.a.s.c.CoreContainer Creating SolrCore 'SKSCore' using configuration from instancedir C:\SKSFile\solr\server\solr\SKSCore, trusted=true
+2020-07-19 17:54:00.003 INFO  (coreLoadExecutor-13-thread-1) [   x:SKSCore] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.SKSCore' (registry 'solr.core.SKSCore') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@e61fe6
+2020-07-19 17:54:00.023 INFO  (coreLoadExecutor-13-thread-1) [   x:SKSCore] o.a.s.c.SolrCore [[SKSCore] ] Opening new SolrCore at [C:\SKSFile\solr\server\solr\SKSCore], dataDir=[C:\SKSFile\solr\server\solr\SKSCore\data\]
+2020-07-19 17:54:00.609 INFO  (coreLoadExecutor-13-thread-1) [   x:SKSCore] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2020-07-19 17:54:00.609 INFO  (coreLoadExecutor-13-thread-1) [   x:SKSCore] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2020-07-19 17:54:00.633 INFO  (coreLoadExecutor-13-thread-1) [   x:SKSCore] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2020-07-19 17:54:00.633 INFO  (coreLoadExecutor-13-thread-1) [   x:SKSCore] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2020-07-19 17:54:00.821 INFO  (coreLoadExecutor-13-thread-1) [   x:SKSCore] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: C:\SKSFile\solr\server\solr\SKSCore\conf
+2020-07-19 17:54:00.840 INFO  (coreLoadExecutor-13-thread-1) [   x:SKSCore] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2020-07-19 17:54:00.846 INFO  (coreLoadExecutor-13-thread-1) [   x:SKSCore] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2020-07-19 17:54:00.856 INFO  (coreLoadExecutor-13-thread-1) [   x:SKSCore] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2020-07-19 17:54:00.868 INFO  (searcherExecutor-15-thread-1-processing-x:SKSCore) [   x:SKSCore] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2020-07-19 17:54:00.868 INFO  (searcherExecutor-15-thread-1-processing-x:SKSCore) [   x:SKSCore] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2020-07-19 17:54:00.877 INFO  (searcherExecutor-15-thread-1-processing-x:SKSCore) [   x:SKSCore] o.a.s.c.SolrCore [SKSCore]  Registered new searcher autowarm time: 0 ms
+2020-07-19 17:54:02.207 INFO  (qtp23598067-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=80
+2020-07-19 17:54:17.260 INFO  (qtp23598067-18) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=8 status=0 QTime=36
+2020-07-19 17:58:57.077 INFO  (qtp23598067-17) [   x:SKSCore] o.a.s.u.p.LogUpdateProcessorFactory [SKSCore]  webapp=/solr path=/update params={version=2.2&wt=xml}{add=[858f371a-5d92-400c-bb9e-f35b36d1d8cd (1672669075384303616)]} 0 110
+2020-07-19 17:58:57.413 INFO  (searcherExecutor-15-thread-1-processing-x:SKSCore) [   x:SKSCore] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2020-07-19 17:58:57.419 INFO  (searcherExecutor-15-thread-1-processing-x:SKSCore) [   x:SKSCore] o.a.s.c.SolrCore [SKSCore]  Registered new searcher autowarm time: 1 ms
+2020-07-19 17:58:57.423 INFO  (qtp23598067-16) [   x:SKSCore] o.a.s.u.p.LogUpdateProcessorFactory [SKSCore]  webapp=/solr path=/update params={version=2.2&wt=xml}{commit=} 0 335
+2020-07-19 17:59:00.894 INFO  (qtp23598067-22) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=9 status=0 QTime=0
+2020-07-19 17:59:07.150 INFO  (qtp23598067-23) [   x:SKSCore] o.a.s.u.p.LogUpdateProcessorFactory [SKSCore]  webapp=/solr path=/update params={version=2.2&wt=xml}{add=[2b865140-0724-434d-99e5-cd80bbe23a51 (1672669085980164096)]} 0 4
+2020-07-19 17:59:07.440 INFO  (searcherExecutor-15-thread-1-processing-x:SKSCore) [   x:SKSCore] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2020-07-19 17:59:07.443 INFO  (searcherExecutor-15-thread-1-processing-x:SKSCore) [   x:SKSCore] o.a.s.c.SolrCore [SKSCore]  Registered new searcher autowarm time: 0 ms
+2020-07-19 17:59:07.444 INFO  (qtp23598067-18) [   x:SKSCore] o.a.s.u.p.LogUpdateProcessorFactory [SKSCore]  webapp=/solr path=/update params={version=2.2&wt=xml}{commit=} 0 287
+2020-07-19 17:59:12.492 INFO  (qtp23598067-17) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=10 status=0 QTime=0
+2020-07-19 17:59:29.425 INFO  (qtp23598067-22) [   x:SKSCore] o.a.s.u.p.LogUpdateProcessorFactory [SKSCore]  webapp=/solr path=/update params={version=2.2&wt=xml}{delete=[ (-1672669109338243072)]} 0 4
+2020-07-19 17:59:29.608 INFO  (searcherExecutor-15-thread-1-processing-x:SKSCore) [   x:SKSCore] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2020-07-19 17:59:29.611 INFO  (searcherExecutor-15-thread-1-processing-x:SKSCore) [   x:SKSCore] o.a.s.c.SolrCore [SKSCore]  Registered new searcher autowarm time: 0 ms
+2020-07-19 17:59:29.612 INFO  (qtp23598067-23) [   x:SKSCore] o.a.s.u.p.LogUpdateProcessorFactory [SKSCore]  webapp=/solr path=/update params={version=2.2&wt=xml}{commit=} 0 181
+2020-07-19 17:59:51.268 INFO  (qtp23598067-18) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=10 status=0 QTime=1
+2020-07-19 18:05:52.197 INFO  (qtp23598067-16) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=10 status=0 QTime=1
+2020-07-19 18:06:01.576 INFO  (qtp23598067-22) [   x:SKSCore] o.a.s.u.p.LogUpdateProcessorFactory [SKSCore]  webapp=/solr path=/update params={version=2.2&wt=xml}{delete=[ (-1672669520539418624)]} 0 1
+2020-07-19 18:06:01.724 INFO  (searcherExecutor-15-thread-1-processing-x:SKSCore) [   x:SKSCore] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2020-07-19 18:06:01.727 INFO  (searcherExecutor-15-thread-1-processing-x:SKSCore) [   x:SKSCore] o.a.s.c.SolrCore [SKSCore]  Registered new searcher autowarm time: 0 ms
+2020-07-19 18:06:01.728 INFO  (qtp23598067-25) [   x:SKSCore] o.a.s.u.p.LogUpdateProcessorFactory [SKSCore]  webapp=/solr path=/update params={version=2.2&wt=xml}{commit=} 0 139
+2020-07-19 18:06:11.302 INFO  (qtp23598067-18) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=10 status=0 QTime=0
+2020-07-19 18:06:14.776 INFO  (qtp23598067-23) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=10 status=0 QTime=0
+2020-07-19 18:09:08.479 INFO  (qtp23598067-24) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&_=1595165887078} hits=10 status=0 QTime=0
+2020-07-19 18:09:20.901 INFO  (qtp23598067-25) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=10 status=0 QTime=0
+2020-07-19 18:10:37.822 INFO  (qtp23598067-18) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=10 status=0 QTime=0
+2020-07-19 18:11:03.981 INFO  (qtp23598067-23) [   x:SKSCore] o.a.s.u.p.LogUpdateProcessorFactory [SKSCore]  webapp=/solr path=/update params={version=2.2&wt=xml}{delete=[858f371a-5d92-400c-bb9e-f35b36d1d8cd (-1672669837634043904)]} 0 2
+2020-07-19 18:11:04.117 INFO  (searcherExecutor-15-thread-1-processing-x:SKSCore) [   x:SKSCore] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2020-07-19 18:11:04.119 INFO  (searcherExecutor-15-thread-1-processing-x:SKSCore) [   x:SKSCore] o.a.s.c.SolrCore [SKSCore]  Registered new searcher autowarm time: 0 ms
+2020-07-19 18:11:04.132 INFO  (qtp23598067-22) [   x:SKSCore] o.a.s.u.p.LogUpdateProcessorFactory [SKSCore]  webapp=/solr path=/update params={version=2.2&wt=xml}{commit=} 0 141
+2020-07-19 18:11:12.540 INFO  (qtp23598067-25) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=9 status=0 QTime=0
+2020-07-19 18:11:17.240 INFO  (qtp23598067-18) [   x:SKSCore] o.a.s.u.p.LogUpdateProcessorFactory [SKSCore]  webapp=/solr path=/update params={version=2.2&wt=xml}{delete=[2b865140-0724-434d-99e5-cd80bbe23a51 (-1672669851537113088)]} 0 2
+2020-07-19 18:11:17.370 INFO  (searcherExecutor-15-thread-1-processing-x:SKSCore) [   x:SKSCore] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2020-07-19 18:11:17.373 INFO  (searcherExecutor-15-thread-1-processing-x:SKSCore) [   x:SKSCore] o.a.s.c.SolrCore [SKSCore]  Registered new searcher autowarm time: 0 ms
+2020-07-19 18:11:17.384 INFO  (qtp23598067-23) [   x:SKSCore] o.a.s.u.p.LogUpdateProcessorFactory [SKSCore]  webapp=/solr path=/update params={version=2.2&wt=xml}{commit=} 0 139
+2020-07-19 18:11:30.557 INFO  (qtp23598067-22) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=8 status=0 QTime=0
+2020-07-19 18:20:38.326 INFO  (qtp23598067-16) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=8 status=0 QTime=0
+2020-07-19 18:20:44.307 INFO  (qtp23598067-18) [   x:SKSCore] o.a.s.u.p.LogUpdateProcessorFactory [SKSCore]  webapp=/solr path=/update params={version=2.2&wt=xml}{delete=[20771459-cfe3-4b3e-a3a1-3a5199415e91 (-1672670446151008256)]} 0 2
+2020-07-19 18:20:44.409 INFO  (searcherExecutor-15-thread-1-processing-x:SKSCore) [   x:SKSCore] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2020-07-19 18:20:44.411 INFO  (searcherExecutor-15-thread-1-processing-x:SKSCore) [   x:SKSCore] o.a.s.c.SolrCore [SKSCore]  Registered new searcher autowarm time: 0 ms
+2020-07-19 18:20:44.421 INFO  (qtp23598067-23) [   x:SKSCore] o.a.s.u.p.LogUpdateProcessorFactory [SKSCore]  webapp=/solr path=/update params={version=2.2&wt=xml}{commit=} 0 104
+2020-07-19 18:20:49.485 INFO  (qtp23598067-21) [   x:SKSCore] o.a.s.c.S.Request [SKSCore]  webapp=/solr path=/select params={q=*:*&rows=100000000&wt=xml} hits=7 status=0 QTime=1
+2020-07-19 18:22:03.790 INFO  (ShutdownMonitor) [   ] o.e.j.s.AbstractConnector Stopped ServerConnector@177849e{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8983}
+2020-07-19 18:22:03.790 INFO  (ShutdownMonitor) [   ] o.e.j.s.session node0 Stopped scavenging
+2020-07-19 18:22:03.792 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=2292837
+2020-07-19 18:22:03.793 INFO  (coreCloseExecutor-21-thread-1) [   ] o.a.s.c.SolrCore [SKSCore]  CLOSING SolrCore org.apache.solr.core.SolrCore@379834
+2020-07-19 18:22:03.793 INFO  (coreCloseExecutor-21-thread-1) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.SKSCore tag=SolrCore@379834
+2020-07-19 18:22:03.794 INFO  (coreCloseExecutor-21-thread-1) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@167b5eb: rootName = null, domain = solr.core.SKSCore, service url = null, agent id = null] for registry solr.core.SKSCore/com.codahale.metrics.MetricRegistry@18d28b8
+2020-07-19 18:22:03.805 INFO  (coreCloseExecutor-21-thread-1) [   ] o.a.s.u.DirectUpdateHandler2 Committing on IndexWriter.close()  ... SKIPPED (unnecessary).
+2020-07-19 18:22:03.826 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node tag=null
+2020-07-19 18:22:03.826 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@1fdb014: rootName = null, domain = solr.node, service url = null, agent id = null] for registry solr.node/com.codahale.metrics.MetricRegistry@f88e6f
+2020-07-19 18:22:03.829 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm tag=null
+2020-07-19 18:22:03.829 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@1a3be26: rootName = null, domain = solr.jvm, service url = null, agent id = null] for registry solr.jvm/com.codahale.metrics.MetricRegistry@4a06d7
+2020-07-19 18:22:03.830 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty tag=null
+2020-07-19 18:22:03.830 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@87d447: rootName = null, domain = solr.jetty, service url = null, agent id = null] for registry solr.jetty/com.codahale.metrics.MetricRegistry@eadfc4
+2020-07-19 18:22:03.839 INFO  (ShutdownMonitor) [   ] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@24a83d{/solr,null,UNAVAILABLE}{C:\SKSFile\solr\server/solr-webapp/webapp}
